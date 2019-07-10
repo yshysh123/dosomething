@@ -5,9 +5,9 @@
   "repository": "https://github.com/yshysh123/dosomething.git",
   "author": "Sihong Yu <yusihong@mafengwo.com>",
   "license": "MIT",
-  "scripts":{
-      "commit": "git-cz",
-      "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 10"
+  "scripts": {
+    "commit": "git-cz",
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 10"
   },
   "dependencies": {
     "@commitlint/prompt-cli": "^8.0.0",
@@ -19,5 +19,8 @@
   },
   "gitHooks": {
     "commit-msg": "npx commitlint -E GIT_PARAMS"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^8.0.0"
   }
 }
