@@ -1,0 +1,23 @@
+{
+  "name": "yush-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yshysh123/dosomething.git",
+  "author": "Sihong Yu <yusihong@mafengwo.com>",
+  "license": "MIT",
+  "scripts":{
+      "commit": "git-cz",
+      "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 10"
+  },
+  "dependencies": {
+    "@commitlint/prompt-cli": "^8.0.0",
+    "commitizen": "^3.1.1",
+    "commitlint": "^8.0.0",
+    "conventional-changelog-cli": "^2.0.21",
+    "cz-conventional-changelog": "^2.1.0",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "commit-msg": "npx commitlint -E GIT_PARAMS"
+  }
+}
